@@ -71,11 +71,12 @@
       background: #111827;
     }
 
-    iframe {
+    video {
       display: block;
       width: 100%;
       height: 100%;
       border: 0;
+      object-fit: contain;
     }
 
     .body {
@@ -131,44 +132,38 @@
   <main>
     <header>
       <h1>MTC Videos</h1>
-      <p class="intro">Two public video players for the MTC demonstration materials. The videos are hosted on OneDrive/SharePoint and embedded here for playback.</p>
+      <p class="intro">Two public video players for the MTC demonstration materials. The videos are hosted directly with this GitHub Pages site.</p>
     </header>
 
     <section class="grid" aria-label="Video gallery">
       <article class="video-card">
         <div class="frame">
-          <iframe
-            title="Video 1"
-            src="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5ATwbdLnpzuBIZXq6TPJLOzU?e=zenFyh"
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video controls preload="metadata" playsinline>
+            <source src="videos/video-1-hd.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="body">
           <h2>Video 1</h2>
-          <p>OneDrive/SharePoint embedded video player.</p>
-          <a class="button" href="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5ATwbdLnpzuBIZXq6TPJLOzU?e=zenFyh" target="_blank" rel="noopener">Open video</a>
+          <p>High-definition MP4 hosted with this site.</p>
+          <a class="button" href="videos/video-1-hd.mp4" target="_blank" rel="noopener">Open video</a>
         </div>
       </article>
 
       <article class="video-card">
         <div class="frame">
-          <iframe
-            title="Video 2"
-            src="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5AROvIxz32UFjXhNlftCNXU4?e=d5zcUJ"
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video controls preload="metadata" playsinline>
+            <source src="videos/video-2-hd.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="body">
           <h2>Video 2</h2>
-          <p>OneDrive/SharePoint embedded video player.</p>
-          <a class="button" href="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5AROvIxz32UFjXhNlftCNXU4?e=d5zcUJ" target="_blank" rel="noopener">Open video</a>
+          <p>High-definition MP4 hosted with this site.</p>
+          <a class="button" href="videos/video-2-hd.mp4" target="_blank" rel="noopener">Open video</a>
         </div>
       </article>
     </section>
 
-    <footer>Hosted on GitHub Pages. Videos remain hosted by OneDrive/SharePoint.</footer>
+    <footer>Hosted on GitHub Pages.</footer>
   </main>
 </body>
 </html>
