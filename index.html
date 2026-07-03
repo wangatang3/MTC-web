@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTC Videos</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --ink: #0b1f44;
+      --muted: #65728a;
+      --line: #dbe3ef;
+      --blue: #0b63ce;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .video-card {
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 46px rgba(11, 31, 68, 0.1);
+    }
+
+    .frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #111827;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .body {
+      padding: 20px 22px 22px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    p {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      margin-top: 16px;
+      padding: 0 16px;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 820px) {
+      main {
+        padding-top: 34px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>MTC Videos</h1>
+      <p class="intro">Two public video players for the MTC demonstration materials. The videos are hosted on OneDrive/SharePoint and embedded here for playback.</p>
+    </header>
+
+    <section class="grid" aria-label="Video gallery">
+      <article class="video-card">
+        <div class="frame">
+          <iframe
+            title="Video 1"
+            src="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5ATwbdLnpzuBIZXq6TPJLOzU?e=zenFyh"
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="body">
+          <h2>Video 1</h2>
+          <p>OneDrive/SharePoint embedded video player.</p>
+          <a class="button" href="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5ATwbdLnpzuBIZXq6TPJLOzU?e=zenFyh" target="_blank" rel="noopener">Open video</a>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="frame">
+          <iframe
+            title="Video 2"
+            src="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5AROvIxz32UFjXhNlftCNXU4?e=d5zcUJ"
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="body">
+          <h2>Video 2</h2>
+          <p>OneDrive/SharePoint embedded video player.</p>
+          <a class="button" href="https://entuedu-my.sharepoint.com/:v:/g/personal/hao-wang_staff_main_ntu_edu_sg/IQDQMnzLjwMeQo7iecgZ4Mu5AROvIxz32UFjXhNlftCNXU4?e=d5zcUJ" target="_blank" rel="noopener">Open video</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>Hosted on GitHub Pages. Videos remain hosted by OneDrive/SharePoint.</footer>
+  </main>
+</body>
+</html>
