@@ -102,7 +102,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
       align-items: start;
     }
@@ -138,6 +138,19 @@
       object-fit: contain;
     }
 
+    .demo-card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .demo-card-link img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .body {
       padding: 20px 22px 22px;
     }
@@ -155,7 +168,8 @@
       line-height: 1.55;
     }
 
-    video:focus-visible {
+    video:focus-visible,
+    .demo-card-link:focus-visible {
       outline: 3px solid rgba(11, 131, 216, 0.55);
       outline-offset: 3px;
     }
@@ -316,6 +330,18 @@
           <h2>Cognitive Digital Twin System Demo Video</h2>
           <p>This video presents a recorded demonstration of the Cognitive Digital Twin deployed in NVIDIA Omniverse, showing how the five-tier architecture supports efficient lifecycle management, monitoring, operation, and decision support for battery energy storage systems.</p>
         </div>
+      </article>
+
+      <article class="video-card">
+        <a class="demo-card-link" href="http://40.82.155.173/" target="_blank" rel="noopener noreferrer" aria-label="Open the CAP at NTU Digital Twin interactive demo">
+          <div class="frame">
+            <img src="assets/digital-twin-demo.png" width="1280" height="720" alt="CAP at NTU Digital Twin Overview dashboard">
+          </div>
+          <div class="body">
+            <h2>CAP@NTU Digital Twin Interactive Demo</h2>
+            <p>Open the live Cognitive Digital Twin interface to explore system monitoring, diagnostics, prediction, and optimization.</p>
+          </div>
+        </a>
       </article>
     </section>
 
